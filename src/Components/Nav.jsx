@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Nav.css"
+import { Link } from 'react-router-dom'
+
 
 import Search from "./Media/Search.svg"
 import Cart from "./Media/Cart.svg"
@@ -15,10 +17,10 @@ export default function Nav() {
 
    <nav>
 
-    <h2>SHOP.CO</h2>
+    <h2><Link to = "/">SHOP.CO</Link></h2>
 
     <ul>
-        <li>Shop</li>
+        <li><Link to = "/Shop">Shop</Link></li>
         <li>On Sale</li>
         <li>New Arivals</li>
         <li>Brands</li>
